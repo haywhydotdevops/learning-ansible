@@ -59,3 +59,9 @@
    - name: Print out
      ansible.builtin.debug:
        msg: "{{UPTIME}}"
+
+- name: Vars Print from roles
+  hosts: all
+  connection: local
+  roles:
+    - sample
